@@ -1,0 +1,127 @@
+*{
+    text-decoration: none;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.img1,
+.img2,
+.img3,
+.img4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    opacity:0.8;
+}
+
+.img1 {
+    background-image: url('../img/pic6.jpeg');
+    min-height: 100%;
+}
+
+.img2 {
+    background-image: url('../img/pic2.jpeg');
+    min-height: 400px;
+}
+
+.img3 {
+    background-image: url('../img/pic3.jpg');
+    min-height: 400px;
+}
+
+.img4 {
+    background-image: url('../img/pic9.jpeg');
+    min-height: 100%;
+}
+
+.button_1{
+    border:2px solid #816a4b;
+    border-radius:20px;
+    transition: 0.3s;
+    color:black;
+}
+
+.button_1:hover{
+    background-color:rgb(129, 106, 75, 0.1);
+
+}
+
+section {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: #f4f4f4;
+    color: #666;
+    width:80%;
+    margin:auto;
+}
+
+.comment_section{
+    padding: 50px 10%;
+    background-color: #f4f4f4;
+    color: #666;
+    width:80%;
+    margin:auto;
+}
+
+/*de text balk buitenkant*/
+.typ_box{
+    display: grid;
+    grid-template-columns:1fr 30px;
+    grid-column-gap:10px;
+    grid-template-rows:30px;
+}
+
+/*de text balk*/
+.typ{
+    border-radius:20px;
+    border:0px solid black;
+    padding:0 10px;
+    resize:none;
+}
+
+/*button uiterlijk*/
+.button{
+    background-image:url(../img/send.png);
+    background-size:cover;
+    background-color:rgba(0,0,0,0);
+    border:0px solid black;
+    cursor: pointer; 
+}
+
+.comment-box{
+    color:red;
+    border: 2px solid red;
+}
+
+.comment-box p{
+    color:red;
+}
+
+h1 {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-shadow:2px 2px 8px black;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+@media (min-width:756px) {
+    .img1,
+    .img2,
+    .img3 {
+        background-attachment: fixed;
+    }
+}
