@@ -53,7 +53,7 @@
             <input type='hidden' name='uid' value='Anonymous'>
             <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
             
-            <textarea class='typ' name='message'></textarea>
+            <textarea class='typ' name='message' required></textarea>
             
             <button class='button' name='commentSubmit' type='submit'></button>
         </form>";
